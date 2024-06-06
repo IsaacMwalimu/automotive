@@ -1,0 +1,1670 @@
+
+:root {
+  --fontUI: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --fontTrebu: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  --fontTimes: "Times New Roman", Times, serif;
+}
+* {
+  scroll-behavior: smooth;
+}
+@media only screen and (min-width:1600px) {
+  header{
+    background-color: red;
+  }
+  
+}
+@media screen and (min-width: 800px) {
+  header {
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    left: 0;
+    font-family: "Times New Roman", Times, serif;
+  }
+  header .navigation {
+    background: #01013f;
+    padding: 15px 0 15px;
+    position: relative;
+    top: 30%;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font: 500 18px sans-serif;
+    text-transform: capitalize;
+  }
+  .navigation a:nth-child(1) {
+    margin-left: 10em;
+  }
+  main {
+    height: 100%;
+    top: 0;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    background-color: #f7f7f7;
+  }
+  main .desc {
+    width: 40%;
+    height: 60%;
+    top: 20%;
+    right: 0;
+    position: absolute;
+  }
+  .desc img {
+    clip-path: polygon(0% 0%, 60% 17%, 100% 100%, 40% 100%);
+    width: 110%;
+    top: -47%;
+    transform: skewX(10deg);
+    left: 6%;
+    position: absolute;
+    object-fit: contain;
+    aspect-ratio: 2/3;
+  }
+  .desc > div {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 100%);
+    background: orangered;
+    transform: skewX(-4.5deg);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: -6em;
+    top: 0%;
+  }
+  #arrowsDown {
+    width: 5%;
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+  }
+  .desc_tri {
+    width: 35%;
+    position: relative;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0%;
+    padding: 10px 0 10px;
+  }
+  .desc_tri span {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #01013f;
+    width: 50%;
+    position: relative;
+    height: 10%;
+    margin: 3px;
+  }
+  .desc_tri2 {
+    width: 35%;
+    position: relative;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    top: -55%;
+    align-items: center;
+    justify-content: center;
+    left: 40%;
+    padding: 10px 0 10px;
+  }
+  .desc_tri2 span {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #01013f;
+    width: 55%;
+    position: relative;
+    height: 10%;
+    margin: 3px;
+  }
+  #arrowsUp {
+    width: 5%;
+    height: 40%;
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    transform: rotate(180deg);
+  }
+  #arrowsUp span {
+    background-color: orangered;
+  }
+  .desc_info {
+    width: 50%;
+    top: 27%;
+    left: 10%;
+    position: absolute;
+  }
+  .desc_info h1 {
+    font: 900 35px var(--fontUI);
+    color: orangered;
+    text-transform: uppercase;
+  }
+  .desc_info h2 {
+    font: 900 80px sans-serif;
+    text-transform: uppercase;
+    margin-top: -0.5em;
+    color: #01013f;
+  }
+  .desc_info h3 {
+    font: 900 35px sans-serif;
+    margin-top: -2.6em;
+    color: #01013f;
+  }
+  .desc_info button {
+    border: none;
+    border-radius: 30px;
+    background: #315fa5;
+    padding: 10px 15px 10px;
+    font: 700 15px var(--fontUI);
+    color: #f7f7f7;
+    transform: translate(0%, -30%);
+  }
+  .desc_info button:hover{
+    box-shadow: inset 4em 10px 10px 40px #f7f7f7;
+    color:#01013f;
+    border:1px solid #01013f;
+    transition: .3s ease-in-out;
+  }
+  #flag_raceUp {
+    width: 15%;
+    height: 6%;
+    right: 4em;
+    display: flex;
+    flex-direction: column;
+    top: 22%;
+    z-index: 20;
+    position: absolute;
+  }
+  .race {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    position: relative;
+  }
+  .race span {
+    width: 10%;
+    background-color: #01013f;
+    height: 100%;
+    display: inline;
+  }
+  .race div {
+    display: inline;
+    width: 10%;
+    width: 10%;
+    background: transparent;
+  }
+  .race2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    left: 10%;
+    position: relative;
+  }
+  .race2 span {
+    width: 10%;
+    background-color: #01013f;
+    height: 100%;
+    display: inline;
+  }
+  .race2 div {
+    display: inline;
+    width: 10%;
+    width: 10%;
+    background: transparent;
+  }
+  #flag_raceDown {
+    width: 15%;
+    height: 5.5%;
+    left: 20%;
+    transform: rotate(180deg);
+    display: flex;
+    flex-direction: column;
+    top: 80%;
+    position: absolute;
+  }
+  #flag_raceDown .race span,
+  #flag_raceDown .race2 span {
+    background: orangered;
+  }
+  #prod_hero_C {
+    top: 100%;
+    position: absolute;
+    display: flex;
+    gap: 40px;
+  }
+  #prod_hero_C div {
+    padding: 10px 1px 10px;
+    width: 350px;
+    position: relative;
+  }
+  #prod_hero_C div:nth-child(1) {
+    margin-left: 5em;
+  }
+  #prod_hero_C span {
+    color: #01013f;
+    font: 500 18px var(--fontUI);
+  }
+  #prod_hero_C p {
+    font: 600 15px var(--fontUI);
+    color: #000000a9;
+  }
+  #prod_hero_C img {
+    width: 20%;
+  }
+  #products {
+    width: 100%;
+    height: 100%;
+    top: 130%;
+    position: absolute;
+  }
+  #products > span {
+    font: 700 24px var(--fontUI);
+    color: #01013f;
+    margin-top: 0.5em;
+    position: absolute;
+  }
+  #products nav {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #000000a9;
+    transition: 0.5s;
+  }
+  #products nav span {
+    font: 500 18px var(--fontUI);
+    margin: 1em;
+    cursor: pointer;
+    padding: 0px 10px 43px;
+    text-decoration: none;
+  }
+  #products nav span:nth-child(1) {
+    margin-left: 30em;
+  }
+  #second.active,
+  #third.active,
+  #start.active,
+  #product_tyres.active {
+    transform: translate(0%, 3%);
+  }
+  .start.active,
+  .second.active,
+  .third.active, 
+  .forth{
+    color: #315fa5;
+    border-bottom: 4px solid #315fa5;
+  }
+  #products nav a:hover {
+    color: #315fa5;
+    border-bottom: 4px solid #315fa5;
+  }
+  #products_container {
+    width: 97%;
+    display: flex;
+    gap: 30px;
+    left: 0%;
+    overflow-y: hidden;
+    position: relative;
+    top: 10%;
+    overflow-x: hidden;
+    height: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .product {
+    width: 18%;
+    height: 96%;
+    position: relative;
+  }
+  .product div #img1 {
+    width: 80%;
+    aspect-ratio: 3/3;
+    transform: translateY(0%);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.4s;
+    transform-style: preserve-3d;
+  }
+  .product div #img2 {
+    width: 80%;
+    aspect-ratio: 3/3;
+    transform: translateY(100%);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.4s;
+    transform-style: preserve-3d;
+  }
+  .product div {
+    border: 1px solid #00000059;
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+  }
+  .product div:hover #img1 {
+    transform: translateY(-100%);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.4s;
+    transform-style: preserve-3d;
+  }
+  .product div:hover #addCart {
+    visibility: visible;
+    cursor: pointer;
+  }
+  .product div span {
+    width: 100%;
+    padding: 10px 0px 10px;
+    text-align: center;
+    color: white;
+    font: 600 16px var(--fontUI);
+    background: #315fa5;
+    z-index: 10;
+    visibility: hidden;
+    top: 50%;
+    position: absolute;
+    text-transform: capitalize;
+    left: 0;
+  }
+
+  .product div span:hover {
+    background: orangered;
+  }
+  .product div:hover #img2 {
+    transform: translateY(-100%);
+    transition: 0.4s;
+    transform-style: preserve-3d;
+  }
+  .product > span {
+    font: 600 15px var(--fontUI);
+    width: 100%;
+    display: block;
+    text-overflow: clip;
+    position: relative;
+  }
+  .product h4 {
+    font: 700 18px var(--fontUI);
+    color: #315fa5;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    margin-top: -0.2em;
+  }
+  .product h5 {
+    font: 500 19px var(--fontUI);
+    color: green;
+    margin-left: 0.2em;
+    margin-top: -1em;
+  }
+  #product_tyres {
+    transform: translate(400%, 0%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 30px;
+    position: relative;
+  }
+  #start {
+    transform: translate(-200%, 3%);
+    width: 97%;
+    padding: 10px 40px 10px;
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: absolute;
+  }
+  #second {
+    transform: translate(-200%, 0%);
+    width: 97%;
+    padding: 10px 40px 10px;
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: absolute;
+  }
+
+  #third {
+    transform: translate(-200%, 0%);
+    width: 97%;
+    padding: 10px 40px 10px;
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: absolute;
+  }
+
+  #shopPref {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 230%;
+    left: 0;
+  }
+  #shopPref #Pref_container {
+    width: 95%;
+    left: 3%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #shopPref #Pref_container .Pref {
+    width: 19%;
+    display: block;
+    height: 50%;
+    border: 1px solid #0000005d;
+  }
+  .Pref img {
+    width: 30%;
+    aspect-ratio: 3/3;
+    margin: 0.5em 0.5em 0.5em;
+  }
+  .Pref span {
+    font: 500 18px var(--fontUI);
+    text-transform: capitalize;
+    margin: 1em 0.5em 0;
+    color: #0e0e0e;
+    transform: translate(0%, 0%);
+    position: absolute;
+  }
+  .Pref h1 {
+    font: 600 15px var(--fontUI);
+    margin: 2em 0em 0 0em;
+    display: inline;
+    color: #000000a9;
+  }
+
+  #productsSection3{
+    width:60%;
+    height: 100%;
+    position: absolute;
+    top:360%;;
+    right:0;
+
+  }
+
+  #downProducts{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:100%;
+  min-height:40%;
+  height:140dvh;
+  row-gap:15px;
+  position: relative;
+  }
+  #downProducts .product {
+    height:30%;
+    width: 30%;;
+    font:500 10px var(--fontUI);
+    margin:10px 0 30px;
+
+  }
+
+  #downProducts .product img{
+    width:65%;
+  }
+
+ #downProducts .product div{
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:75%;
+
+ }
+ #downProducts .product div span{
+  width:100.5%;
+  margin:27px 0 0;
+ }
+  footer {
+    background: #e9e9e9;
+    width: 100%;
+    height: 60%;
+    margin:100px 0 0;
+    position: absolute;
+    top: 550%;
+    left: 0;
+  }
+  #vid{
+    width:100%;
+    height:200px;
+  position:absolute;
+  top:270%
+
+  }
+  #vid video{
+    width: 100%;
+    position: relative;
+  }
+
+.icons{
+  display:flex;
+  flex-direction: column;
+  border:1px solid red;
+  display:inline;
+}
+}
+@media only screen and (min-width: 500px) and (max-width: 790px) {
+  body {
+    overflow-x: hidden;
+  }
+  * {
+    white-space: none;
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    left: 0;
+    font-family: "Times New Roman", Times, serif;
+  }
+  header .navigation {
+    background: #01013f;
+    padding: 15px 0 15px;
+    position: relative;
+    top: 30%;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font: 500 18px sans-serif;
+    text-transform: capitalize;
+  }
+  .navigation a:nth-child(1) {
+    margin-left: 10em;
+  }
+  main {
+    height: 100%;
+    top: 0;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: #f7f7f7;
+  }
+  main .desc {
+    width: 70%;
+    height: 90%;
+    top: 20%;
+    right: 0;
+    position: absolute;
+  }
+  .desc img {
+    clip-path: polygon(0% 0%, 60% 17%, 100% 100%, 40% 100%);
+    width: 90%;
+    top: -10%;
+    transform: skewX(18deg);
+    left: 39%;
+    position: absolute;
+    object-fit: contain;
+    aspect-ratio: 2/3;
+  }
+  .desc > div {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 100%);
+    background: orangered;
+    transform: skewX(-4.5deg) rotateX(40deg);
+    width: 50%;
+    height: 40%;
+    position: absolute;
+    right: -10em;
+    top: 0%;
+  }
+  #arrowsDown {
+    width: 10%;
+    height: 25%;
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    left: 53%;
+  }
+  .desc_tri {
+    width: 35%;
+    position: relative;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0%;
+    padding: 10px 0 10px;
+  }
+  .desc_tri span {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #01013f;
+    width: 50%;
+    position: relative;
+    height: 10%;
+    margin: 3px;
+  }
+  .desc_tri2 {
+    width: 35%;
+    position: relative;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    top: -55%;
+    align-items: center;
+    justify-content: center;
+    left: 40%;
+    padding: 10px 0 10px;
+  }
+  .desc_tri2 span {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #01013f;
+    width: 55%;
+    position: relative;
+    height: 10%;
+    margin: 3px;
+  }
+  #arrowsUp {
+    width: 9%;
+    height: 25%;
+    position: absolute;
+    top: 8%;
+    overflow: hidden;
+    left: 30%;
+    transform: rotate(180deg);
+  }
+  #arrowsUp span {
+    background-color: orangered;
+  }
+  .desc_info {
+    width: 60%;
+    top: 27%;
+    left: 0%;
+    position: absolute;
+  }
+  .desc_info h1 {
+    font: 900 30px var(--fontUI);
+    color: orangered;
+    display: block;
+    text-transform: uppercase;
+  }
+  .desc_info h2 {
+    font: 900 50px sans-serif;
+    text-transform: uppercase;
+    margin-top: -0.5em;
+    color: #01013f;
+  }
+  .desc_info h3 {
+    font: 900 35px sans-serif;
+    margin-top: -1.6em;
+    color: #01013f;
+  }
+  .desc_info button {
+    border: none;
+    border-radius: 30px;
+    background: #315fa5;
+    padding: 10px 15px 10px;
+    font: 700 15px var(--fontUI);
+    color: #f7f7f7;
+    transform: translate(0%, -30%);
+  }
+  #flag_raceUp {
+    width: 15%;
+    height: 3%;
+    right: 2em;
+    display: flex;
+    flex-direction: column;
+    top: 24%;
+    z-index: 10;
+    position: absolute;
+  }
+  .race {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    position: relative;
+  }
+  .race span {
+    width: 10%;
+    background-color: #01013f;
+    height: 100%;
+    display: inline;
+  }
+  .race div {
+    display: inline;
+    width: 10%;
+    width: 10%;
+    background: transparent;
+  }
+  .race2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    left: 10%;
+    position: relative;
+  }
+  .race2 span {
+    width: 10%;
+    background-color: #01013f;
+    height: 100%;
+    display: inline;
+  }
+  .race2 div {
+    display: inline;
+    width: 10%;
+    width: 10%;
+    background: transparent;
+  }
+  #flag_raceDown {
+    width: 15%;
+    height: 3%;
+    left: 20%;
+    transform: rotate(180deg);
+    display: flex;
+    flex-direction: column;
+    top: 60%;
+    position: absolute;
+  }
+  #flag_raceDown .race span,
+  #flag_raceDown .race2 span {
+    background: orangered;
+  }
+  #prod_hero_C {
+    top: 80%;
+    position: absolute;
+    display: flex;
+    gap: 40px;
+    left: 0;
+    width: 100%;
+  }
+  #prod_hero_C div {
+    padding: 10px 1px 10px;
+    width: 250px;
+    position: relative;
+  }
+  #prod_hero_C div:nth-child(1) {
+    margin-left: 2em;
+  }
+  #prod_hero_C span {
+    color: #01013f;
+    font: 500 18px var(--fontUI);
+  }
+  #prod_hero_C p {
+    font: 600 15px var(--fontUI);
+    color: #000000a9;
+  }
+  #prod_hero_C img {
+    width: 20%;
+  }
+  #products {
+    width: 100dvw;
+    height: 100%;
+    left: 0;
+    top: 100%;
+    position: absolute;
+  }
+  #products > span {
+    font: 700 24px var(--fontUI);
+    color: #01013f;
+    display: block;
+    margin-top: 0.5em;
+    position: absolute;
+  }
+  #products nav {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #000000a9;
+    transition: 0.5s;
+  }
+  #products nav span {
+    color: #000000a9;
+    font: 500 16px var(--fontUI);
+    margin: 0.5em;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 45px 5px 0px;
+    text-decoration: none;
+  }
+  #products nav span:nth-child(1) {
+    margin-left: 10em;
+    color: #315fa5;
+  }
+
+  #products nav span:hover {
+    color: #315fa5;
+    border-bottom: 4px solid #315fa5;
+  }
+  #products_container {
+    width: 100%;
+    left: 0%;
+    overflow-y: hidden;
+    position: absolute;
+    top: 10%;
+    overflow-x: hidden;
+    height: 80%;
+  }
+  .product {
+    width: 22%;
+    height: 45%;
+    overflow: hidden;
+    position: relative;
+  }
+  .product div #img1 {
+    width: 80%;
+    aspect-ratio: 3/3;
+    transform: translateY(0%);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.4s;
+    transform-style: preserve-3d;
+  }
+  .product div #img2 {
+    width: 80%;
+    aspect-ratio: 3/3;
+    transform: translateY(100%);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.4s;
+    transform-style: preserve-3d;
+  }
+  .product div {
+    border: 1px solid #00000059;
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+  }
+  .product div:hover #img1 {
+    transform: translateY(-100%);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.4s;
+    transform-style: preserve-3d;
+  }
+  .product div:hover #addCart {
+    visibility: visible;
+    cursor: pointer;
+  }
+  .product div span {
+    width: 100%;
+    padding: 10px 0px 10px;
+    text-align: center;
+    color: white;
+    font: 600 16px var(--fontUI);
+    background: #315fa5;
+    z-index: 10;
+    visibility: hidden;
+    top: 50%;
+    position: absolute;
+    text-transform: capitalize;
+    left: 0;
+  }
+
+  .product div span:hover {
+    background: orangered;
+  }
+  .product div:hover #img2 {
+    transform: translateY(-100%);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.4s;
+    transform-style: preserve-3d;
+  }
+  .product > span {
+    font: 600 15px var(--fontUI);
+    width: 100%;
+
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    height: 45px;
+    position: relative;
+  }
+  .product h4 {
+    font: 700 18px var(--fontUI);
+    color: #315fa5;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    margin-top: -0.2em;
+  }
+  .product h5 {
+    font: 500 19px var(--fontUI);
+    color: green;
+    margin-left: 0.2em;
+    margin-top: -1em;
+  }
+  #product_tyres {
+    transform: translate(400%, 0%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 30px;
+    position: relative;
+  }
+  #start {
+    transform: translate(-100%, 3%);
+    width: 97%;
+    padding: 10px 40px 10px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: absolute;
+  }
+
+  #second {
+    transform: translate(100%, -103%);
+    width: 97%;
+    padding: 10px 40px 10px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: absolute;
+  }
+  #second.active,
+  #third.active,
+  #start.active {
+    transform: translate(0%, 3%);
+  }
+  .start.active,
+  .second.active,
+  .third.active {
+    border-bottom: 4px solid hsl(216, 94%, 54%);
+  }
+  #third {
+    transform: translate(200%, 0);
+    width: 97%;
+    padding: 10px 40px 10px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: absolute;
+  }
+
+  #shopPref {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 200%;
+    left: 0;
+    padding:10px 0 20px;
+  }
+  #shopPref #Pref_container {
+    width: 100%;
+    left: 0%;
+    position: relative;
+    height: 100%;
+ display: grid;
+ grid-template-columns: repeat(5,1fr);
+  }
+  #shopPref #Pref_container .Pref {
+    width: 100%;
+    display: block;
+    height: 100%;
+    border: 1px solid #0000005d;
+  }
+  .Pref img {
+    width: 20%;
+    aspect-ratio: 3/3;
+    margin: 0.5em 0em 0.5em;
+  }
+  .Pref span {
+    font: 500 16px var(--fontUI);
+    text-transform: capitalize;
+    margin: 1em 0.5em 0;
+    color: #0e0e0e;
+    transform: translate(0%, 0%);
+    position: absolute;
+  }
+  .Pref h1 {
+    font: 600 15px var(--fontUI);
+    margin: 2em 0em 0 0em;
+    display: inline;
+    color: #000000a9;
+  }
+  footer {
+    background: #e9e9e9;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 450%;
+    left: 0;
+  }
+
+  #productsSection3{
+    width:99%;
+    height: 100%;
+    position: absolute;
+    top:250%;;
+    left:0;
+    right:0;
+    padding:0 10px 10px;;
+    overflow: hidden;
+  }
+  #downProducts{
+    display:grid;
+ grid-gap:.2rem;
+    width:100%;
+height:100%;
+  grid-template-columns: repeat(2,1fr);
+  position: relative;
+  }
+  #downProducts .product {
+    height:50%;
+    width: 80%;;
+    font:500 10px var(--fontUI);
+    padding:10px 0 80px;
+
+  }
+
+  #downProducts .product img{
+    width:65%;
+  }
+
+ #downProducts .product div{
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:100%;
+margin:0 0 10px;
+ }
+ #downProducts .product div span{
+  width:100.5%;
+  margin:46px 0 0;
+ }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+  body {
+    overflow-x: hidden;
+  }
+  * {
+    white-space: none;
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    left: 0;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+    background: hsl(240, 10%, 35%);
+    position: absolute;
+    top: 0%;
+    z-index: 30;
+    left: -100%;
+    align-items: center;
+  }
+  .navigation.active {
+    left: 0;
+  }
+  #head.active{
+    height:100vh;
+  }
+.navigation.active header{
+  height:100dvh;
+}
+  #menuContainer {
+    width: 35px;
+    height: 25px;
+    position: absolute;
+    left: 10%;
+    overflow: hidden;
+    display: flex;
+    padding:20px 10px 10px;
+    flex-direction: column;
+    z-index: 100;
+  }
+  #menuContainer .bars {
+    width: 100%;
+    position: relative;
+    padding: 3px 0px 3px;
+    background-color: #315fa5;
+    margin: 3px 0 0;
+  }
+  #menuContainer.active .bars:nth-child(1){
+     transform: rotate(45deg) translate(7px);
+     padding:2.5px 0 2.5px; 
+     background:hsl(0,7%,86%)
+  }
+  #menuContainer.active .bars:nth-child(2){
+ display: none;
+  }  #menuContainer.active .bars:nth-child(3){
+  transform: rotate(-44deg) translate(7px); 
+  padding:2.5px 0 2.5px; 
+  background:hsl(0, 7%, 86%)
+
+}
+  .navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font: 500 18px sans-serif;
+    text-transform: capitalize;
+  }
+  .navigation a:nth-child(1) {
+    margin-top: 4em;
+  }
+  main {
+    height: 100%;
+    top: 0;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: #fff;
+  }
+  main .desc {
+    width: 100%;
+    height: 90%;
+    top: 20%;
+    right: 0;
+    position: absolute;
+  }
+  .desc img {
+    clip-path: polygon(0% 0%, 60% 17%, 100% 100%, 40% 100%);
+    width: 90%;
+    top: -10%;
+    transform: skewX(18deg);
+    left: 39%;
+    position: absolute;
+    object-fit: contain;
+    aspect-ratio: 2/3;
+  }
+  .desc > div {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 100%);
+    background: orangered;
+    transform: skewX(-4.5deg) rotateX(40deg);
+    width: 50%;
+    height: 40%;
+    position: absolute;
+    right: -8em;
+    top: 0%;
+  }
+  #arrowsDown {
+    width: 14%;
+    height: 25%;
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    left: 53%;
+  }
+  .desc_tri {
+    width: 35%;
+    position: relative;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0%;
+    padding: 10px 0 10px;
+  }
+  .desc_tri span {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #01013f;
+    width: 50%;
+    position: relative;
+    height: 10%;
+    margin: 3px;
+  }
+  .desc_tri2 {
+    width: 35%;
+    position: relative;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    top: -55%;
+    align-items: center;
+    justify-content: center;
+    left: 40%;
+    padding: 10px 0 10px;
+  }
+  .desc_tri2 span {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #01013f;
+    width: 55%;
+    position: relative;
+    height: 10%;
+    margin: 3px;
+  }
+  #arrowsUp {
+    width: 18%;
+    height: 25%;
+    position: absolute;
+    top: 8%;
+  overflow: hidden;
+    left: 30%;
+    transform: rotate(180deg);
+  }
+  #arrowsUp span {
+    background-color: orangered;
+  }
+  .desc_info {
+    width: 100%;
+    top: 24%;
+    z-index: 20;
+    left: 0%;
+    position: absolute;
+  }
+  .desc_info h1 {
+    font: 900 30px var(--fontUI);
+    color: orangered;
+    display: block;
+    text-transform: uppercase;
+  }
+  .desc_info h2 {
+    font: 900 50px sans-serif;
+    text-transform: uppercase;
+    margin-top: -0.5em;
+    color: #01013f;
+  }
+  .desc_info h3 {
+    font: 900 35px sans-serif;
+    margin-top: -1.6em;
+    color: #01013f;
+  }
+  .desc_info button {
+    border: none;
+    border-radius: 30px;
+    background: #315fa5;
+    padding: 10px 15px 10px;
+    font: 700 15px var(--fontUI);
+    color: #f7f7f7;
+    transform: translate(30%, -30%);
+  }
+  #flag_raceUp {
+    width: 18%;
+    height: 2.5%;
+    right: 2em;
+    display: flex;
+    flex-direction: column;
+    top: 24%;
+    z-index: 10;
+    position: absolute;
+  }
+  .race {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    position: relative;
+  }
+  .race span {
+    width: 10%;
+    background-color: #01013f;
+    height: 100%;
+    display: inline;
+  }
+  .race div {
+    display: inline;
+    width: 10%;
+    width: 10%;
+    background: transparent;
+  }
+  .race2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    left: 10%;
+    position: relative;
+  }
+  .race2 span {
+    width: 10%;
+    background-color: #01013f;
+    height: 100%;
+    display: inline;
+  }
+  .race2 div {
+    display: inline;
+    width: 10%;
+    width: 10%;
+    background: transparent;
+  }
+  #flag_raceDown {
+    width: 18%;
+    height: 2.2%;
+    left: 20%;
+    transform: rotate(180deg);
+    display: flex;
+    flex-direction: column;
+    top: 60%;
+    position: absolute;
+  }
+  #flag_raceDown .race span,
+  #flag_raceDown .race2 span {
+    background: orangered;
+  }
+  #prod_hero_C {
+    top: 80%;
+    position: absolute;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    left: 0;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #prod_hero_C div {
+    padding: 10px 1px 10px;
+    width: 250px;
+    position: relative;
+  }
+  #prod_hero_C div {
+    margin-left: 2em;
+  }
+  #prod_hero_C span {
+    color: #01013f;
+    font: 500 18px var(--fontUI);
+  }
+  #prod_hero_C p {
+    font: 600 15px var(--fontUI);
+    color: #000000a9;
+  }
+  #prod_hero_C img {
+    width: 20%;
+  }
+  #products {
+    width: 100%;;
+    height:150%;
+    left: 0;
+    right:0;
+    top: 150%;
+    overflow: hidden;
+    border:1px solid red;
+    position: absolute;
+  }
+  #products > span {
+    font: 700 24px var(--fontUI);
+    color: #01013f;
+    display: block;
+    margin-top: 0.5em;
+    position: absolute;
+  }
+   .productsNavigation{
+    height: 50%;
+    width: 40%;
+    background: #f1f1f1;
+    display: flex;
+    z-index: 50;
+    visibility: hidden;
+    position:absolute;
+    left:0;
+    flex-direction:column;
+    border-bottom: 1px solid #000000a9;
+    transition: 0.5s;
+  }
+  .productsNavigation.active{
+    visibility: visible;
+  }
+  #hToggle{
+    cursor: pointer;
+    color:#01013f;
+    font:400 16px var(--fontUI);
+    text-transform: capitalize;
+    position: absolute;
+    right:0;
+
+  }
+  #products nav span {
+    color: #000000a9;
+    font: 500 16px var(--fontUI);
+    margin: 0.5em;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 45px 5px 0px;
+    text-decoration: none;
+  }
+  #products nav span:nth-child(1) {
+    margin-left: 1em;
+    color: #315fa5;
+  }
+
+  #products nav span:hover {
+    color: #315fa5;
+    border-bottom: 4px solid #315fa5;
+  }
+  #products_container {
+    width: 100%;
+    left: 0%;
+    overflow: hidden;
+    position: absolute;
+    top: 10%;
+    height: 100%;
+    padding:10px 0 10px;
+  }
+  .product {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    padding:0 0 150px;
+    margin:10px 0 0px; 
+  bordeR:1px solid red;
+  }
+  .product div #img1 {
+    width: 40%;
+    aspect-ratio: 3/3;
+    transform: translateY(10%);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.4s;
+    transform-style: preserve-3d;
+  }
+  .product div #img2 {
+    width: 80%;
+    aspect-ratio: 3/3;
+    transform: translateY(100%);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.4s;
+    transform-style: preserve-3d;
+  }
+  .product div {
+    border: 1px solid #00000059;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .product div:hover #img1 {
+    transform: translateY(-100%);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.4s;
+    transform-style: preserve-3d;
+  }
+  .product div:hover #addCart {
+    visibility: visible;
+    cursor: pointer;
+  }
+  .product div span {
+    width: 50%;
+    padding: 10px 0px 10px;
+    text-align: center;
+    color: white;
+    font: 600 16px var(--fontUI);
+    background: #315fa5;
+    z-index: 10;
+    top: 10%;
+    position:relative;
+    text-transform: capitalize;
+    left: 0;
+  }
+#addCart:nth-child(1){
+  color:red
+}
+  .product div span:hover {
+    background: orangered;
+  }
+  .product div:hover #img2 {
+    transform: translateY(-100%);
+    transition: 0.4s;
+    transform-style: preserve-3d;
+  }
+  .product > span {
+    font: 600 15px var(--fontUI);
+    width: 100%;
+
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    height: 45px;
+    position: relative;
+  }
+  .product h4 {
+    font: 700 18px var(--fontUI);
+    color: #315fa5;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    margin-top: -0.2em;
+  }
+  .product h5 {
+    font: 500 19px var(--fontUI);
+    color: green;
+    margin-left: 0.2em;
+    margin-top: -1em;
+  }
+  #product_tyres {
+    transform: translate(400%, 0%);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 30px;
+    position: relative;
+  }
+  #start {
+    transform: translate(-100%, 0%);
+
+  }
+#products_container > div{
+  display: grid;
+  row-gap:100px;
+  grid-template-columns: repeat(2,1fr);
+  position:absolute;
+  padding: 10px 0px 40px;
+  height: 100%;
+  width: 100%;
+}
+  #second {
+    transform: translate(100%, -103%);
+ 
+  }
+  #second.active,
+  #third.active,
+  #start.active {
+    transform: translate(0%, 3%);
+  }
+  .start.active,
+  .second.active,
+  .third.active {
+    border-bottom: 4px solid hsl(216, 94%, 54%);
+  }
+  #third {
+    transform: translate(200%, 0);
+  
+  }
+
+  #shopPref {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 340%;
+    left: 0;
+  }
+  #shopPref #Pref_container {
+    width: 100%;
+    left: 3%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #shopPref #Pref_container .Pref {
+    width: 19%;
+    display: block;
+    height: 50%;
+    border: 1px solid #0000005d;
+  }
+  .Pref img {
+    width: 20%;
+    aspect-ratio: 3/3;
+    margin: 0.5em 0em 0.5em;
+  }
+  .Pref span {
+    font: 500 16px var(--fontUI);
+    text-transform: capitalize;
+    margin: 1em 0.5em 0;
+    color: #0e0e0e;
+    transform: translate(0%, 0%);
+    position: absolute;
+  }
+  .Pref h1 {
+    font: 600 15px var(--fontUI);
+    margin: 2em 0em 0 0em;
+    display: inline;
+    color: #000000a9;
+  }
+  footer {
+    background: #e9e9e9;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 450%;
+    left: 0;
+  }
+  #productsSection3{
+    width:99%;
+    height: 100%;
+    position: absolute;
+    top:350%;;
+    left:0;
+    right:0;
+    padding:0 10px 10px;;
+    overflow: hidden;
+  }
+  #downProducts{
+    display:grid;
+ grid-gap:.2rem;
+    width:100%;
+height:100%;
+  grid-template-columns: repeat(2,1fr);
+  position: relative;
+  }
+  #downProducts .product {
+    height:50%;
+    width: 80%;;
+    font:500 10px var(--fontUI);
+    padding:10px 0 80px;
+
+  }
+  #downProducts .product img{
+    width:65%;
+  }
+
+ #downProducts .product div{
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:100%;
+margin:0 0 10px;
+ }
+ #downProducts .product div span{
+  width:100.5%;
+  margin:46px 0 0;
+ }
+}
